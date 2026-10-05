@@ -24,7 +24,7 @@ export const ContactSection: React.FC = () => {
     setErrorMsg(null);
 
     try {
-      // Direct FormSubmit Integration for shashank.2004v@gmail.com (Zero Key Required)
+      // Direct FormSubmit Integration for shashankv9565@gmail.com
       const res = await fetch(`https://formsubmit.co/ajax/${PERSONAL_INFO.email}`, {
         method: 'POST',
         headers: {
@@ -80,7 +80,7 @@ export const ContactSection: React.FC = () => {
             Let's Build Something <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Extraordinary</span>
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Direct Email delivery to <span className="text-cyan-400 font-mono">shashank.2004v@gmail.com</span> & Instant WhatsApp chat.
+            Direct Email delivery to <span className="text-cyan-400 font-mono">{PERSONAL_INFO.email}</span> & Instant WhatsApp chat.
           </p>
         </div>
 
@@ -161,7 +161,7 @@ export const ContactSection: React.FC = () => {
                 <span>Fast Response Time Guaranteed</span>
               </div>
               <p className="text-xs text-gray-400">
-                Form submissions are sent directly to <strong className="text-gray-200">shashank.2004v@gmail.com</strong>.
+                Form submissions are sent directly to <strong className="text-gray-200">{PERSONAL_INFO.email}</strong>.
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-white">Message Transmitted!</h3>
                 <p className="text-gray-300 text-sm max-w-md mx-auto">
-                  Thank you for reaching out! Your message has been sent to <strong className="text-cyan-400">shashank.2004v@gmail.com</strong>.
+                  Thank you for reaching out! Your message has been sent to <strong className="text-cyan-400">{PERSONAL_INFO.email}</strong>.
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
@@ -267,7 +267,7 @@ export const ContactSection: React.FC = () => {
                   className="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-purple-600 to-pink-500 hover:from-cyan-400 hover:to-pink-400 text-slate-950 font-bold text-base shadow-xl shadow-cyan-500/30 hover:scale-101 transition-all flex items-center justify-center gap-2"
                 >
                   {loading ? (
-                    <span className="animate-pulse">Transmitting to shashank.2004v@gmail.com...</span>
+                    <span className="animate-pulse">Transmitting to {PERSONAL_INFO.email}...</span>
                   ) : (
                     <>
                       <span>Send Direct Email Message</span>

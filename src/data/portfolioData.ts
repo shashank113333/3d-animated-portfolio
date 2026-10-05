@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   tagline: "Building modern, scalable web applications with Next.js 14, React, TypeScript, and AI-accelerated workflows (Google Antigravity).",
   about: "Results-driven Associate Software Engineer at ProDesk IT and BCA Graduate with expertise in building modern, scalable web applications and managing operational workflows. Proficient in Next.js 14, React.js, TypeScript, Tailwind CSS, and MySQL, with hands-on experience leveraging AI-accelerated development tools (Google Antigravity) to deliver production-ready software efficiently. Strong track record in full-stack sprint delivery, data reconciliation, and project coordination.",
   location: "Varanasi, Uttar Pradesh, India",
-  email: "shashank.2004v@gmail.com",
+  email: "shashankv9565@gmail.com",
   phone: "+91-9565548075",
   github: "https://github.com/shashank113333",
   linkedin: "https://linkedin.com/in/shashankv01",
