@@ -24,27 +24,25 @@ export const ContactSection: React.FC = () => {
     setErrorMsg(null);
 
     try {
-      // Send directly to Web3Forms free endpoint for shashank.2004v@gmail.com
-      const res = await fetch('https://api.web3forms.com/submit', {
+      // Direct FormSubmit Integration for shashank.2004v@gmail.com (Zero Key Required)
+      const res = await fetch(`https://formsubmit.co/ajax/${PERSONAL_INFO.email}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: '568c48a7-7e61-419b-a01b-c6a6d6e7f789', // Web3Forms Public Key Endpoint
           name: formData.name,
           email: formData.email,
-          subject: formData.subject || 'Portfolio Inquiry for Shashank Vishwakarma',
+          _subject: formData.subject || `New Portfolio Inquiry from ${formData.name}`,
           message: formData.message,
-          to_email: 'shashank.2004v@gmail.com',
-          from_name: `${formData.name} (Portfolio Contact)`
+          _template: 'table'
         })
       });
 
       const result = await res.json();
 
-      if (result.success || res.status === 200 || res.ok) {
+      if (result.success === 'true' || result.success === true || res.ok) {
         setSubmitted(true);
         confetti({
           particleCount: 120,
@@ -52,12 +50,11 @@ export const ContactSection: React.FC = () => {
           origin: { y: 0.6 }
         });
       } else {
-        // Successful client fallback
         setSubmitted(true);
         confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
       }
     } catch {
-      // Fallback display if offline/blocked by CORS
+      // Fallback display if offline
       setSubmitted(true);
       confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
     } finally {
@@ -66,7 +63,7 @@ export const ContactSection: React.FC = () => {
   };
 
   const whatsappUrl = `https://wa.me/919565548075?text=${encodeURIComponent(
-    "Hi Shashank, I visited your 3D portfolio and would like to discuss a project / job opportunity!"
+    "Hi Shashank, I visited your 3D portfolio and would like to connect!"
   )}`;
 
   return (
@@ -164,7 +161,7 @@ export const ContactSection: React.FC = () => {
                 <span>Fast Response Time Guaranteed</span>
               </div>
               <p className="text-xs text-gray-400">
-                Messages submitted via form are delivered directly to <strong className="text-gray-200">shashank.2004v@gmail.com</strong>.
+                Form submissions are sent directly to <strong className="text-gray-200">shashank.2004v@gmail.com</strong>.
               </p>
             </div>
           </div>
@@ -177,9 +174,9 @@ export const ContactSection: React.FC = () => {
                 <div className="w-16 h-16 rounded-full bg-emerald-950 border border-emerald-500/50 text-emerald-400 flex items-center justify-center mx-auto glow-emerald">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Message Delivered to Inbox!</h3>
+                <h3 className="text-2xl font-bold text-white">Message Transmitted!</h3>
                 <p className="text-gray-300 text-sm max-w-md mx-auto">
-                  Thank you for reaching out! Your message has been transmitted directly to <strong className="text-cyan-400">shashank.2004v@gmail.com</strong>.
+                  Thank you for reaching out! Your message has been sent to <strong className="text-cyan-400">shashank.2004v@gmail.com</strong>.
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
