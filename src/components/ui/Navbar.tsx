@@ -59,8 +59,8 @@ export const Navbar: React.FC<Props> = ({
               <Terminal className="w-5 h-5 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
             </div>
           </div>
-          <span className="font-bold text-xl tracking-wider bg-gradient-to-r from-cyan-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
-            SHASHANK<span className="text-cyan-400 text-xs font-mono ml-1 px-1.5 py-0.5 rounded bg-cyan-950/80 border border-cyan-500/30">3D</span>
+          <span className="font-extrabold text-2xl tracking-widest bg-gradient-to-r from-cyan-400 via-purple-300 to-pink-400 bg-clip-text text-transparent">
+            SV
           </span>
         </a>
 

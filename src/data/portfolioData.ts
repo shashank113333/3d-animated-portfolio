@@ -10,6 +10,7 @@ export const PERSONAL_INFO = {
   phone: "+91-9565548075",
   github: "https://github.com/shashank113333",
   linkedin: "https://linkedin.com/in/shashankv01",
+  instagram: "https://instagram.com",
   twitter: "https://github.com/shashank113333",
   status: "🟢 Associate Software Engineer at ProDesk IT",
   stats: [
@@ -119,14 +120,14 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: "cinestream",
-    title: "4. CineStream — Media Streaming Portal (Sprint 12)",
+    title: "4. CineStream — Media Streaming Portal (Sprint 11)",
     description: "Interactive video streaming web platform featuring dynamic content feeds, category filtering, and responsive design.",
     fullDetails: "Engineered REST API integrations for fetching media catalogues, category filtering, search feeds, and fluid video streaming UI.",
     category: "Full Stack",
     tags: ["React.js", "REST API Integration", "Tailwind CSS", "Vercel"],
     image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=800&q=80",
-    liveUrl: "https://sprint-12-cine-stream-axvo.vercel.app/",
-    githubUrl: "https://github.com/shashank113333/sprint-12-cine-stream",
+    liveUrl: "https://sprint-11-cine-stream.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/sprint-11-cine-stream",
     featured: true,
     stats: { metrics: "REST API Integration" }
   },
@@ -203,8 +204,8 @@ export const PROJECTS_DATA: Project[] = [
     category: "Backend",
     tags: ["Python", "Tkinter GUI", "MySQL Database", "Desktop App"],
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
-    liveUrl: "https://github.com/shashank113333",
-    githubUrl: "https://github.com/shashank113333",
+    liveUrl: "https://github.com/shashank113333/RMS",
+    githubUrl: "https://github.com/shashank113333/RMS",
     featured: false,
     stats: { metrics: "Python & MySQL Desktop App" }
   }
