@@ -10,6 +10,8 @@ import { ExperienceSection } from './components/ui/ExperienceSection';
 import { ContactSection } from './components/ui/ContactSection';
 import { Footer } from './components/ui/Footer';
 import { Customizer3DWidget } from './components/ui/Customizer3DWidget';
+import { FluidParticleCanvas } from './components/3d/FluidParticleCanvas';
+import { CinematicMarquee } from './components/ui/CinematicMarquee';
 
 export function App() {
   const [settings, setSettings] = useState<CustomizerSettings>({
@@ -28,7 +30,10 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#07090e] text-gray-100 selection:bg-cyan-500 selection:text-slate-950">
+    <div className="min-h-screen bg-[#07090e] text-gray-100 selection:bg-cyan-500 selection:text-slate-950 relative overflow-hidden">
+      {/* Interactive WebGL Ambient Fluid Canvas */}
+      <FluidParticleCanvas />
+
       {/* Custom Mouse Pointer */}
       <CustomCursor />
 
@@ -40,11 +45,12 @@ export function App() {
       />
 
       {/* Main Content Sections */}
-      <main>
+      <main className="relative z-10">
         <HeroSection
           settings={settings}
           onOpenCustomizer={() => setIsCustomizerOpen(true)}
         />
+        <CinematicMarquee />
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
