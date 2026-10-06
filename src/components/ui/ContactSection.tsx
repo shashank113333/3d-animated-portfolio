@@ -80,7 +80,7 @@ export const ContactSection: React.FC = () => {
             Let's Build Something <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Extraordinary</span>
           </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Direct Email delivery to <span className="text-cyan-400 font-mono">{PERSONAL_INFO.email}</span> & Instant WhatsApp chat.
+            Need a high-performance website, Next.js web application, or custom software solution? Send your project details directly to <span className="text-cyan-400 font-mono">{PERSONAL_INFO.email}</span> or chat on WhatsApp!
           </p>
         </div>
 
