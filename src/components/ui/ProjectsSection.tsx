@@ -9,7 +9,7 @@ export const ProjectsSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const categories = ['All', '3D WebGL', 'Full Stack', 'AI & ML', 'Mobile / Apps'];
+  const categories = ['All', 'Full Stack', 'Frontend', 'Backend', 'AI & ML', '3D WebGL', 'Mobile / Apps'];
 
   const filteredProjects = activeCategory === 'All'
     ? PROJECTS_DATA

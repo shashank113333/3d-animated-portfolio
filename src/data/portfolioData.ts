@@ -81,15 +81,15 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: "taskmatrix",
     title: "1. TaskMatrix — Enterprise Agile Task Management System",
-    description: "Enterprise-grade Agile & Kanban project management dashboard for task tracking, sprint planning, and team collaboration. Capstone Project (Sprint 15).",
-    fullDetails: "Architected and delivered TaskMatrix (Sprint 15 Capstone), featuring Zustand global state management, protected route guards for authentication pipelines, sprint planning, and interactive Kanban boards.",
+    description: "Enterprise-grade Agile & Kanban project management dashboard for task tracking, sprint planning, and team collaboration. Capstone Project (Sprint 16).",
+    fullDetails: "Architected and delivered TaskMatrix (Sprint 16 Capstone), featuring Zustand global state management, protected route guards for authentication pipelines, sprint planning, and interactive Kanban boards.",
     category: "Full Stack",
     tags: ["Next.js 14", "TypeScript", "Tailwind CSS", "Zustand", "Google Antigravity", "Vercel"],
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
-    liveUrl: "https://taskmatrix.vercel.app",
-    githubUrl: "https://github.com/shashank113333",
+    liveUrl: "https://prodesk-capstone-taskmatrix-sprint-inky.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/prodesk-capstone-taskmatrix-Sprint-16",
     featured: true,
-    stats: { stars: 25, metrics: "Sprint 15 Capstone Project" }
+    stats: { stars: 25, metrics: "Sprint 16 Capstone" }
   },
   {
     id: "ai-cover-letter",
@@ -99,8 +99,8 @@ export const PROJECTS_DATA: Project[] = [
     category: "AI & ML",
     tags: ["React.js", "Next.js", "Generative AI Integration", "Tailwind CSS", "Vercel"],
     image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=800&q=80",
-    liveUrl: "https://ai-cover-letter.vercel.app",
-    githubUrl: "https://github.com/shashank113333",
+    liveUrl: "https://ai-cover-letter-generator-liart.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/Ai-cover-letter-generator",
     featured: true,
     stats: { metrics: "Generative AI Integration" }
   },
@@ -112,8 +112,8 @@ export const PROJECTS_DATA: Project[] = [
     category: "Full Stack",
     tags: ["React.js", "Financial Analytics", "Tailwind CSS", "Vercel"],
     image: "https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=800&q=80",
-    liveUrl: "https://cashflow-tracker.vercel.app",
-    githubUrl: "https://github.com/shashank113333",
+    liveUrl: "https://cash-flow-tracker-sprint-2.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/cash-flow-tracker-sprint-2",
     featured: true,
     stats: { metrics: "Real-Time Financial Analytics" }
   },
@@ -125,9 +125,9 @@ export const PROJECTS_DATA: Project[] = [
     category: "Full Stack",
     tags: ["React.js", "REST API Integration", "Tailwind CSS", "Vercel"],
     image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=800&q=80",
-    liveUrl: "https://cinestream.vercel.app",
-    githubUrl: "https://github.com/shashank113333",
-    featured: false,
+    liveUrl: "https://sprint-12-cine-stream-axvo.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/sprint-12-cine-stream",
+    featured: true,
     stats: { metrics: "REST API Integration" }
   },
   {
@@ -138,23 +138,75 @@ export const PROJECTS_DATA: Project[] = [
     category: "Full Stack",
     tags: ["React.js", "State Management", "E-Commerce UI", "Vercel"],
     image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80",
-    liveUrl: "https://shopzone.vercel.app",
-    githubUrl: "https://github.com/shashank113333",
-    featured: false,
+    liveUrl: "https://shopzone-spa-seven.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/shopzone-spa",
+    featured: true,
     stats: { metrics: "E-Commerce SPA" }
   },
   {
     id: "prodesk-brand",
-    title: "6. ProDesk Corporate Brand Portal & Additional Apps",
-    description: "Corporate brand portal, registration wizard, bookstore event portal, and developer detective utility suite.",
-    fullDetails: "Engineered production corporate brand portals and utility apps including Corporate Brand Portal, Registration Wizard, Bookstore Events, and Dev Detective.",
+    title: "6. ProDesk Corporate Brand Portal (Sprint 1)",
+    description: "Corporate brand portal showcasing executive services, brand identity, and enterprise web architecture.",
+    fullDetails: "Built for ProDesk IT as Sprint 1 corporate portal with modern layout, high Lighthouse scores, and responsive components.",
     category: "Full Stack",
-    tags: ["Next.js 14", "Tailwind CSS", "Component Architecture", "ProDesk IT"],
+    tags: ["Next.js 14", "Tailwind CSS", "Corporate Branding", "Vercel"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    liveUrl: "https://prodesk-brand.vercel.app",
+    liveUrl: "https://prodesk-corporate-brand.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/prodesk-sprint-1",
+    featured: false,
+    stats: { metrics: "ProDesk Corporate Brand" }
+  },
+  {
+    id: "registration-wizard",
+    title: "7. Registration Wizard",
+    description: "Multi-step interactive form wizard with client-side validation, state retention, and smooth step transitions.",
+    fullDetails: "Designed multi-stage input workflow with dynamic form state management, validation error triggers, and accessibility compliance.",
+    category: "Frontend",
+    tags: ["React.js", "Form Validation", "UX Architecture", "Vercel"],
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+    liveUrl: "https://registration-wizard-six.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/registration-wizard",
+    featured: false,
+    stats: { metrics: "Multi-Step Form Wizard" }
+  },
+  {
+    id: "dev-detective",
+    title: "8. Dev Detective",
+    description: "GitHub developer profile search engine utilizing GitHub REST API to fetch real-time user stats, repos, and bios.",
+    fullDetails: "Built Developer search app fetching GitHub user data, profile metrics, repositories, location, and social links with light/dark theme toggle.",
+    category: "Frontend",
+    tags: ["JavaScript", "GitHub REST API", "Dark/Light Mode", "Vercel"],
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    liveUrl: "https://dev-detective-sooty.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/dev-detective",
+    featured: false,
+    stats: { metrics: "GitHub API Search Engine" }
+  },
+  {
+    id: "kanban-board",
+    title: "9. Kanban Board",
+    description: "Drag-and-drop Kanban task management tool for organizing workflows into To-Do, In Progress, and Completed columns.",
+    fullDetails: "Implemented interactive drag-and-drop task management UI with local storage persistence and dynamic category columns.",
+    category: "Frontend",
+    tags: ["React.js", "Drag and Drop", "Task Management", "Vercel"],
+    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
+    liveUrl: "https://kanban-board-six-eta-14.vercel.app/",
+    githubUrl: "https://github.com/shashank113333/kanban-board",
+    featured: false,
+    stats: { metrics: "Drag & Drop Task Board" }
+  },
+  {
+    id: "rms-python",
+    title: "10. RMS — Student Result Management System",
+    description: "Desktop GUI Application for Student & Course Result Management built with Python Tkinter and MySQL database.",
+    fullDetails: "Engineered desktop application featuring full CRUD operations for student registration, course enrollment, marksheets calculation, and MySQL relational database integration.",
+    category: "Backend",
+    tags: ["Python", "Tkinter GUI", "MySQL Database", "Desktop App"],
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+    liveUrl: "https://github.com/shashank113333",
     githubUrl: "https://github.com/shashank113333",
-    featured: true,
-    stats: { metrics: "ProDesk Corporate Suite" }
+    featured: false,
+    stats: { metrics: "Python & MySQL Desktop App" }
   }
 ];
 

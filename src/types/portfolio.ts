@@ -23,7 +23,7 @@ export interface Project {
   title: string;
   description: string;
   fullDetails?: string;
-  category: 'Full Stack' | '3D WebGL' | 'AI & ML' | 'Mobile / Apps';
+  category: 'Full Stack' | 'Frontend' | 'Backend' | '3D WebGL' | 'AI & ML' | 'Mobile / Apps';
   tags: string[];
   image: string;
   liveUrl: string;
