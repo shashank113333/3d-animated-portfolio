@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Volume2, VolumeX, Sliders, Menu, X, Sparkles, Terminal, Send } from 'lucide-react';
+import { Volume2, VolumeX, Sliders, Menu, X, Sparkles, Terminal } from 'lucide-react';
 import { soundFX } from '../../utils/soundSynthesizer';
 import type { CustomizerSettings } from '../../types/portfolio';
 
@@ -108,17 +108,6 @@ export const Navbar: React.FC<Props> = ({
             <span>3D Sandbox</span>
             <Sparkles className="w-3.5 h-3.5 text-pink-400 animate-spin" style={{ animationDuration: '4s' }} />
           </button>
-
-          {/* Professional Project CTA */}
-          <a
-            href="#contact"
-            onMouseEnter={() => soundFX.playHover()}
-            onClick={() => soundFX.playClick()}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 hover:from-cyan-300 hover:to-pink-400 text-slate-950 font-bold text-sm shadow-lg shadow-cyan-500/30 hover:shadow-cyan-400/50 hover:scale-105 transition-all duration-300"
-          >
-            <Send className="w-4 h-4" />
-            <span>Start a Project</span>
-          </a>
         </div>
 
         {/* Mobile Hamburger Toggle */}
