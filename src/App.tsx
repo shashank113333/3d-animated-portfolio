@@ -7,7 +7,6 @@ import { AboutSection } from './components/ui/AboutSection';
 import { SkillsSection } from './components/ui/SkillsSection';
 import { ProjectsSection } from './components/ui/ProjectsSection';
 import { ExperienceSection } from './components/ui/ExperienceSection';
-import { ServicesSection } from './components/ui/ServicesSection';
 import { ContactSection } from './components/ui/ContactSection';
 import { Footer } from './components/ui/Footer';
 import { Customizer3DWidget } from './components/ui/Customizer3DWidget';
@@ -53,7 +52,6 @@ export function App() {
         />
         <CinematicMarquee />
         <AboutSection />
-        <ServicesSection />
         <SkillsSection />
         <ProjectsSection />
         <ExperienceSection />
